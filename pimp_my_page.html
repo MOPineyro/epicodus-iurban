@@ -11,12 +11,81 @@
 		div {
 		  background: lemonchiffon;
 		  margin: 0 auto;
-		  width: 400px;
+		  width: 600px;
 		  padding:20px
 		}
 
 		h1 {
 		  color: darkgrey;
+		}
+
+		hr {
+			width: 400px;
+		}
+
+		.width-change-example {
+			background: lightblue;
+			width: 900px;
+		}
+
+		.background-change-example {
+			background-image: url(http://36.media.tumblr.com/b85c93ca6a73d2cb549d2667a190d0b8/tumblr_nb19pui9bJ1qgn992o1_500.jpg);
+			color: white;
+			height: 300px;
+		}
+
+		.see-through {
+			background: steelblue;
+		}
+
+		.changing-size-example {
+			background: crimson;
+			color: white;
+			font-family: Georgia;
+			font-size: 14px;
+		}
+		
+		.border-add-example {
+			color: firebrick;
+			border: 1px solid;
+		}
+
+		.my_button {
+		  border: 0 none;
+		  border-radius: 2px 2px 2px 2px;
+		  color: #FFFFFF;
+		  background-color: red;
+		  cursor: pointer;
+		  display: inline-block;
+		  font-family: Arial,sans-serif;
+		  font-size: 12px;
+		  font-weight: bold;
+		  line-height: 20px;
+		  margin-bottom: 0;
+		  margin-top: 10px;
+		  padding: 7px 10px;
+		  text-transform: none;
+		  width: auto;
+		}
+
+		.your_button {
+
+		}
+
+		.your_button:hover {
+			/*Code goes here*/
+		}
+
+		.circular {
+			width: 300px;
+			height: 300px;
+			border-radius: 150px;
+			-webkit-border-radius: 150px;
+			-moz-border-radius: 150px;
+			background: url(http://33.media.tumblr.com/5cbfa864e12f4118ca4ea3f56e58a30e/tumblr_ndtbfcyd4o1qgn992o1_500.jpg) no-repeat;
+			box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+			-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+			-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 		}
 
 	</style>
@@ -45,26 +114,82 @@
 	    <li>Web browsers like Chrome, Firefox, and Internet Explorer read HTML and CSS so that they know how to show the web page.</li>
 	  </ol>
 
-	  <p>Let's start by going through a few lessons from here: <a href="http://www.codecademy.com/courses/css-coding-with-style/0/1"> Code Academy: CSS coding with style</a> </p>
+	  <p>Let's start by going through a few lessons from here: <a href="http://www.codecademy.com/courses/css-coding-with-style/0/1" target="_blank"> Code Academy: CSS coding with style</a> </p>
 	</div>
+
+	<div>
+		<h2>Below is a list of a few things you can do with CSS. Try and explore by making some changes.</h2>
+	</div>
+
+	<hr>
+
+	<div class="width-change-example">
+		<h2>Change the size of this box by modifying the CSS width. Try and make it the same size as the other boxes.</h2>
+		<p>Hint: <a href="http://www.htmldog.com/guides/css/beginner/text/" target="_blank">CSS Text</a></p>
+	</div>
+
+	<hr>
 
 	<div class="background-change-example">
-		<h2>Changing backrgound colors</h2>
+		<h2>Changing background colors & adding background images</h2>
+		<div class="see-through">
+			<p>Hint: <a href="http://www.htmldog.com/guides/css/beginner/text/">CSS Text</a></p>
+			<p>See Here for some colors to chose from: <a href="http://www.colors.commutercreative.com/grid/" target="_blank">CSS Colors</a></p>
+		</div>
 	</div>
 
+	<hr>
+
 	<div class="changing-size-example">
-		<h2>Changing size of text and div boxes</h2>
+		<h2>Let's try and change the size and style of the words in this box</h2>
+		<p>Here are some fonts to choose from: <a href="http://www.cssfontstack.com/" target="_blank">Web safe fonts</a></p>
+		<p>Hint: <a href="http://www.htmldog.com/guides/css/beginner/text/" target="_blank">CSS Text</a></p>
 	</div>
+
+	<hr>
 
 	<div class="border-add-example">
 		<h2>Adding borders</h2>
+
+		<p>Let's add a border around this box</p>
+		<p>Hint: <a href="http://www.htmldog.com/guides/css/beginner/borders/" target="_blank">CSS Borders</a></p>
 	</div>
+
+	<hr>
 
 	<div class="button-create-example">
 		<h2>Creating buttons</h2>
+
+		<p>Let's try and create a button. Here's mine:</p>
+		<span class="my_button">My Button!</span>
+		<p class="your_button">Your Button! </p>
 	</div>
+
+	<hr>
+
+	<div class="button-hover-example">
+		<h2>Adding hover color change to buttons</h2>
+
+		<p>Let's get fancy and try and to get our button to change color when the mouse is over it</p>
+		<span class="your_button">Your Button!</span>
+	</div>
+
+	<hr>
+
+	<div class="button-link-example">
+		<h2>Making your button do stuff</h2>
+
+		<p>Let's use the <a> tag we learned last week to make this button open up your favortie web page</p>
+		<span class="your_button">Your Button!</span>
+	</div>
+
+	<hr>
 
 	<div class="styleing-pictures-example">
 		<h2>Making your pictures a circle</h2>
+		<p>This one is a little more advanced, but let's try it out</p>
+
+		<p>Take a look at this:</p>
+		<div class="circular"></div>
 	</div>
 </body>
